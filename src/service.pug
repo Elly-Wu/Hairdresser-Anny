@@ -1,0 +1,75 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    //- bootstrap@5.3.2
+    link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css", rel="stylesheet", integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN", crossorigin="anonymous")
+    //- iconify CDN-https://iconify.design/docs/iconify-icon/
+    script(src="https://cdn.jsdelivr.net/npm/iconify-icon@2.0.0/dist/iconify-icon.min.js")
+    //- Google字體
+    link(rel="preconnect", href="https://fonts.googleapis.com")
+    link(rel="preconnect", href="https://fonts.gstatic.com", crossorigin)
+    link(href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Just+Me+Again+Down+Here&family=Noto+Sans+TC:wght@100..900&family=Oleo+Script+Swash+Caps:wght@400;700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap", rel="stylesheet")
+    //-自訂Css 
+    link(rel="stylesheet", href="css/style.css")
+    title Hairdresser Anny
+  body
+    header.l-header
+      include includes/_navbar.pug
+
+    main
+      section.l-service
+        .ado-box  
+          img(src="img/ados/gnet.png", alt="net")
+        .container
+            .row.service-frame 
+                .col-9
+                    .row.service-list 
+                        .col-6.list1 
+                            dl.row 
+                                dt.col-sm-7 燙髮Perm
+                                dd.col-sm-5 NT$1880
+                                dt.col-sm-7 漂染Hair Bleaching
+                                dd.col-sm-5 NT$3000up
+                                dt.col-sm-7 染髮Hair Dyeing
+                                dd.col-sm-5 NT$1880
+                        .col-6.list2
+                            dl.row 
+                                dt.col-sm-7 洗髮Hair Washing
+                                dd.col-sm-5 NT$200up 
+                                dt.col-sm-7 夜間洗髮Washing at night
+                                    span (8:00pm~10:00pm)
+                                dd.col-sm-5 NT$350up
+                                dt.col-sm-7 剪髮Hair Cutting
+                                dd.col-sm-5 NT$300
+                                dt.col-sm-7 護髮Hair Caring
+                                dd.col-sm-5 NT$300up
+                        ul.service-note  
+                            li 實際價格會因頭髮長度而有所不同，將由現場設計師配合髮型做判斷。
+                            li 染燙造型均有兩週保固。
+                            li 接受信用卡支付。
+                            li 歡迎來電預約或詢問更多資訊。
+                        h2.title__en Services
+                .col-3 
+                    h2.title 服務內容
+                    address.s-address
+                      p Screen.hair斯古林高雄旗艦店
+                      ul
+                        li 804高雄市鼓山區裕誠路1033號
+                        li 上班日期：週二到週日
+                        li 07-5525807
+                        li 0929082874
+      footer.l-footer 
+        .copy &copy;2024 Hairdresser Anny All rights reserved.
+        #l-gotop 
+          iconify-icon(icon="gg:arrow-up-o", width="4rem", height="4rem", style="color: #5bc0be")
+
+
+
+    //- JQuery原始檔CDN
+    script(src="https://code.jquery.com/jquery-3.7.1.min.js", integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=", crossorigin="anonymous")
+    //- G.sap
+    script(src="js/gsap.min.js") 
+    //-自訂Js
+    script(src="js/main.min.js") 

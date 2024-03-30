@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@2.0.0/dist/iconify-icon.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&amp;family=Just+Me+Again+Down+Here&amp;family=Noto+Sans+TC:wght@100..900&amp;family=Oleo+Script+Swash+Caps:wght@400;700&amp;family=Raleway:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Hairdresser Anny</title>
+  </head>
+  <body>
+    <header class="l-header">
+      <nav class="l-navbar">
+        <div class="l-navbar__logo"> <a href="index.html">Hairdresser Anny</a></div>
+        <div class="l-navbar__tween"><a class="l-navbar__btn" href="index.html#contact"> 
+            <iconify-icon class="u-icon --md" icon="ph:chair-bold" style="color: #5BC0BE"></iconify-icon></a>
+          <div class="menu-box">
+            <button class="hamburger"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+            <div class="menu"> 
+              <h2 class="menu-title">找髮型Catalog：</h2>
+              <div class="catalog-list"><a class="catalog-item" href="cut.html"> <span class="dot"> </span>
+                  <p class="text">剪髮Cutting</p></a><a class="catalog-item" href="db.html"> <span class="dot"> </span>
+                  <p class="text">染髮Dyeing、漂染Bleaching</p></a><a class="catalog-item" href="ps.html"> <span class="dot"> </span>
+                  <p class="text">燙髮Perm、縮毛矯正Straightening</p></a><a class="catalog-item" href="men.html"> <span class="dot"> </span>
+                  <p class="text">男生髮型Men's Hair Style</p></a><a class="catalog-item" href="customize.html"> <span class="dot"> </span>
+                  <p class="text">客製化髮型Customize </p></a></div>
+              <div class="menu__list"> 
+                <div class="con-box" onmouseover="dropdownCon()" onmouseout="backCon()"><a class="menu-item" href="index.html#contact">預約Contact</a>
+                  <div class="contact d-frame"><a class="menu-item" href="service.html">服務內容Services</a></div>
+                </div><a class="menu-item" href="index.html#feedback">好評分享Feedback </a><a class="menu-item" href="index.html#about">美髮師About Anny</a>
+                <div class="social-box"> <a class="social-icon" href="https://www.facebook.com/profile.php?id=100079939059714"> 
+                    <iconify-icon icon="teenyicons:facebook-outline" width="34" height="34" style="color: #5BC0BE"></iconify-icon></a><a class="social-icon" href="https://www.instagram.com/image_520601/?fbclid=IwAR14EWHcLyROCEaA_S7agthu1QEXBZO0IGz71U5coQv2T6Sr_nl99t5chG4_aem_AavqYB8vRqZCzVoJGz49VI6DSqWjJLNt_SKNcqv1EeFTtPEPuGP1_M1jynaq_wfuPkMFV63TSRkqMB4aqDNU5WD4"> 
+                    <iconify-icon icon="ph:instagram-logo-thin" width="38" height="38" style="color: #5BC0BE"></iconify-icon></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="l-service">
+        <div class="ado-box"> <img src="img/ados/gnet.png" alt="net"></div>
+        <div class="container">
+          <div class="row service-frame"> 
+            <div class="col-9">
+              <div class="row service-list"> 
+                <div class="col-6 list1"> 
+                  <dl class="row"> 
+                    <dt class="col-sm-7">燙髮Perm</dt>
+                    <dd class="col-sm-5">NT$1880</dd>
+                    <dt class="col-sm-7">漂染Hair Bleaching</dt>
+                    <dd class="col-sm-5">NT$3000up</dd>
+                    <dt class="col-sm-7">染髮Hair Dyeing</dt>
+                    <dd class="col-sm-5">NT$1880</dd>
+                  </dl>
+                </div>
+                <div class="col-6 list2">
+                  <dl class="row"> 
+                    <dt class="col-sm-7">洗髮Hair Washing</dt>
+                    <dd class="col-sm-5">NT$200up </dd>
+                    <dt class="col-sm-7">夜間洗髮Washing at night<span>(8:00pm~10:00pm)</span></dt>
+                    <dd class="col-sm-5">NT$350up</dd>
+                    <dt class="col-sm-7">剪髮Hair Cutting</dt>
+                    <dd class="col-sm-5">NT$300</dd>
+                    <dt class="col-sm-7">護髮Hair Caring</dt>
+                    <dd class="col-sm-5">NT$300up</dd>
+                  </dl>
+                </div>
+                <ul class="service-note"> 
+                  <li>實際價格會因頭髮長度而有所不同，將由現場設計師配合髮型做判斷。</li>
+                  <li>染燙造型均有兩週保固。</li>
+                  <li>接受信用卡支付。</li>
+                  <li>歡迎來電預約或詢問更多資訊。</li>
+                </ul>
+                <h2 class="title__en">Services</h2>
+              </div>
+            </div>
+            <div class="col-3"> 
+              <h2 class="title">服務內容</h2>
+              <address class="s-address">
+                <p>Screen.hair斯古林高雄旗艦店</p>
+                <ul>
+                  <li>804高雄市鼓山區裕誠路1033號</li>
+                  <li>上班日期：週二到週日</li>
+                  <li>07-5525807</li>
+                  <li>0929082874</li>
+                </ul>
+              </address>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="l-footer"> 
+        <div class="copy">&copy;2024 Hairdresser Anny All rights reserved.</div>
+        <div id="l-gotop"> 
+          <iconify-icon icon="gg:arrow-up-o" width="4rem" height="4rem" style="color: #5bc0be"></iconify-icon>
+        </div>
+      </footer>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="js/gsap.min.js"> </script>
+    <script src="js/main.min.js"> </script>
+  </body>
+</html>

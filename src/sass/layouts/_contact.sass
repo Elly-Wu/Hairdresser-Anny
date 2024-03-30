@@ -1,0 +1,90 @@
+.l-contact
+    display: flex
+    color: var(--dark-purple)
+    .c-form-box
+        width: 100%
+
+// 椅子icon需做有drop shadow
+
+// form卷軸scrollbox
+.scrollbox
+    width: 90%
+    height: 70vh
+    overflow: auto
+    padding: 5px
+    &::-webkit-scrollbar
+        width: 10px
+        border: 2px solid var(--white-pink)
+        border-radius: 5px
+    &::-webkit-scrollbar-thumb
+        background-color: var(--white-pink)
+        border-radius: 5px
+
+// form預約表格
+.c-form
+    display: flex
+    flex-direction: column
+
+    &__field-wrap
+        display: flex
+        align-items: center
+        margin-bottom: var(--spacing-40)
+                    
+    label
+        flex-shrink: 0
+        // width: 179px
+        text-align: right
+
+    input
+        background-color: var(--white-pink)
+        border: none
+        border-radius: 5px
+        padding: var(--spacing-8) var(--spacing-24)
+        margin-left: 4px
+        &::-webkit-placeholder,
+        &::placeholder
+            color: var(--dark-gray)
+
+    &__option-wrap
+        display: flex
+        flex-wrap: wrap
+        margin-bottom: var(--spacing-40)
+        input
+            width: 16px
+    &__checkbox-group
+        display: flex
+        flex-direction: column
+        width: 25%
+        label
+            width: auto
+            text-align: left
+
+    textarea
+        background-color: var(--white-pink)
+        border: none
+        border-radius: 5px
+        padding: var(--spacing-8) var(--spacing-24)
+        margin-left: 4px
+        &::-webkit-placeholder,
+        &::placeholder
+            color: var(--dark-gray)
+
+.c-btn__submit
+    border: 2px solid var(--dark-purple)
+    border-radius: 5px
+    width: 110px
+    height: 33px
+    margin: 0 auto
+
+.c-btn
+    font-weight: 900
+
+.para-box
+    margin-bottom: 80px
+    font-size: 1.2rem
+    display: flex
+    flex-direction: column
+    align-items: center
+    .contact-text
+        text-align: center
+        font-weight: 600

@@ -1,0 +1,26 @@
+// 髮型分頁版面
+.l-hair
+    background: radial-gradient(var(--bg-gray), white, white)
+    color: var(--dark-purple)
+    background-attachment: fixed
+    min-height: 100vh
+    &__video-mask 
+        height: 100vh
+    // 髮型分頁video背景
+    &__filter
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background-color: var(--blue-purple-rgba)
+        z-index: 1
+    &__links
+        height: 100%
+        display: inline-flex
+        flex-direction: column
+        justify-content: center
+        padding-left: 4vw
+    .fixed
+        position: fixed
+        right: 0

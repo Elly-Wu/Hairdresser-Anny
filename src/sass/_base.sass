@@ -1,0 +1,70 @@
+*
+  position: relative
+  box-sizing: border-box
+
+html
+  font-size: calc(16px / 1.6)
+  +media(lg)
+    font-size: calc(15px / 1.6)
+  +media(ipad)
+    font-size: calc(14px / 1.6)
+
+body
+  margin: 0
+  font-family: var(--font-cht)
+  font-size: 1.6rem
+  font-weight: 400
+  letter-spacing: 0.1rem
+  line-height: 1.7
+  -webkit-font-smoothing: antialiased
+
+/* 
+  ---------Reset--------- */
+a, button, input, label, select, textarea
+  -ms-touch-action: manipulation
+  touch-action: manipulation
+  //防止手機雙點擊螢幕放大縮小
+
+a, button
+  display: inline-block
+  text-decoration: none
+  color: inherit
+  //禁止文字反白
+  user-select: none
+  &:hover
+    text-decoration: none
+    color: inherit
+
+button
+  padding: 0
+  border: none
+  background: none
+
+img
+  max-width: 100%
+
+ul, ol
+  list-style: none
+  padding: 0
+  margin: 0
+
+h1, h2, h3, h4, h5, h6, p, button
+  margin: 0
+  font-family: inherit
+  font-size: inherit
+  font-weight: inherit
+  line-height: inherit
+  color: inherit
+  //設定inherit，讓標籤不被套用的插件影響
+
+span
+  display: block
+  line-height: inherit
+
+/* 
+  ---------Layouts--------- */
+footer
+  margin: 0
+
+.container
+  max-width: 140rem

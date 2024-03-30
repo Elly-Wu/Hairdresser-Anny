@@ -1,0 +1,210 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    //- iconify CDN-https://iconify.design/docs/iconify-icon/
+    script(src="https://cdn.jsdelivr.net/npm/iconify-icon@2.0.0/dist/iconify-icon.min.js")
+    //- Google字體
+    link(rel="preconnect", href="https://fonts.googleapis.com")
+    link(rel="preconnect", href="https://fonts.gstatic.com", crossorigin)
+    link(href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Just+Me+Again+Down+Here&family=Noto+Sans+TC:wght@100..900&family=Oleo+Script+Swash+Caps:wght@400;700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap", rel="stylesheet")
+    //- bootstrap@5.3.2
+    link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css", rel="stylesheet", integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN", crossorigin="anonymous")
+    //- favicon
+    link(rel="mask-icon", href="favicon.ico")
+    //- swiper banner輪撥
+    link(rel="stylesheet", href="css/swiper.bundle.css")
+    //-自訂Css 
+    link(rel="stylesheet", href="css/style.css")
+    title Hairdresser Anny
+  body
+    header.l-header
+      include includes/_navbar.pug
+
+      .swiper.l-header__swiper
+        .swiper-wrapper
+          .swiper-slide
+            .l-header__bn-mask
+              img.u-object-fit(src="img/bns/purple-pink-bn.png", alt="purple pink")
+              .quotes
+                h3.en Welcome to Anny’s page!
+                  br 
+                  |Our store offers professional quality
+                  br
+                  |at a friendly price!
+                h3.ch 我們以平易近人的價格提供專業的服務品質
+          .swiper-slide
+            .l-header__bn-mask
+              img.u-object-fit(src="img/bns/purple-bn.png", alt="purple")
+              .quotes
+                h3.en A professional hairdresser makes changing
+                  br 
+                  |hairstyles much easier. 
+                  br
+                  |Anny has worked hard to design many types of 
+                  br
+                  |hairstyles.
+                  br
+                  |Feel free to enjoy your hair salon journey.
+                h3.ch 快來體驗一趟愉悅、“不冒險”的美髮沙龍服務吧！
+          .swiper-slide
+            .l-header__bn-mask
+              img.u-object-fit(src="img/bns/pink-bn.png", alt="pink")
+              .quotes
+                h3.en We understand that everyone has unique needs 
+                  br 
+                  |when it comes to hair care, and that’s why we have 
+                  br
+                  |a diverse selection of conditioners that can help you achieve
+                  br
+                  |the best results possible.
+                h3.ch 我們有多樣的選擇，能修護不同的髮質問題。
+
+    main
+      section#contact.l-contact.u-bd-set
+        .l-contact.u-bd-set__img-mask
+          img.u-object-fit(src="img/bns/pink-bn.png", alt="pink")
+        .container
+          .row 
+            .col-lg-4.order-lg-1.order-2
+              .c-form-box 
+                form.c-form.scrollbox(action="", method="post")
+                  .c-form__field-wrap
+                    label(for="username") *姓名:
+                    input#username(name="username", type="text", required="required", placeholder="Name", title="姓名欄位", autocomplete="on")
+                  .c-form__field-wrap
+                    label(for="email") *電子郵件:
+                    input#email(name="email", type="email", required="required", placeholder="Email", autocomplete="on")
+                  .c-form__field-wrap
+                    label(for="tel") 手機或電話:
+                    input#tel(name="tel", type="tel", placeholder="cel/tel", autocomplete="on")
+                  .c-form__field-wrap
+                    label(for="date") *日期:
+                    input#date(name="date", type="date", required="required")
+                  .c-form__field-wrap
+                    label(for="time") *時間:
+                    input#time(name="time", type="time", autocomplete="on", required="required")
+                    //- , min="11:00", max="23:00"沒效
+
+                  h4 服務項目（可複選）:
+                  .c-form__option-wrap
+                    .c-form__checkbox-group
+                      input#order1(type="checkbox", name="order", title="洗髮", 洗髮, value="洗髮")
+                      label(for="order1") 洗髮
+                        span.u-text-body.u-ff-raleway Hair washing
+                    .c-form__checkbox-group
+                      input#order2(type="checkbox", name="order", title="護髮", 護髮, value="護髮")
+                      label(for="order2") 護髮
+                        span.u-text-body.u-ff-raleway Hair care
+                    .c-form__checkbox-group
+                      input#order3(type="checkbox", name="order", title="剪髮", value="剪髮")
+                      label(for="order3") 剪髮
+                        span.u-text-body.u-ff-raleway Cutting
+                    .c-form__checkbox-group
+                      input#order5(type="checkbox", name="order", title="染髮", value="染髮")
+                      label(for="order5") 染髮
+                        span.u-text-body.u-ff-raleway Dyeing
+                    .c-form__checkbox-group
+                      input#order6(type="checkbox", name="order", title="漂染", value="漂染")
+                      label(for="order6") 漂染
+                        span.u-text-body.u-ff-raleway Bleaching
+                    .c-form__checkbox-group
+                      input#order4(type="checkbox", name="order", title="燙髮", value="燙髮")
+                      label(for="order4") 燙髮
+                        span.u-text-body.u-ff-raleway Perm
+                    .c-form__checkbox-group
+                      input#order7(type="checkbox", name="order", title="縮毛矯正", value="縮毛矯正")
+                      label(for="order7") 縮毛矯正
+                        span.u-text-body.u-ff-raleway Straightening
+
+                  .c-form__field-wrap
+                    label(for="message") 備註:
+                    textarea#message.input-field(name="message", placeholder="message")
+
+                  button.c-btn__submit
+                    span 送出
+            .col-lg-1.order-lg-2.order-3
+              h2.title.vertical 預約
+            .col-lg-4.order-lg-3.order-4
+                .para-box
+                  p.contact-text 你不妨試試能舒緩頭皮問題，
+                    br
+                    |或保濕、修護秀髮的護髮體驗。
+                    br
+                    |也能進一步瞭解更多
+                  a.c-btn(href="service.html") 服務內容>>
+                .para-box
+                  p.contact-text 歡迎來電預約
+                  address
+                    p Screen.hair斯古林高雄旗艦店
+                    ul
+                      li 804高雄市鼓山區裕誠路1033號
+                      li 上班日期：週二到週日
+                      li 07-5525807
+                      li 0929082874
+                .para-box
+                  p.contact-text 若有特殊造型需求，請在備註說明，或現場提前告知設計師。
+            .col-lg-3.order-lg-4.order-1
+              h2.title__en Contact
+
+      section.l-feedback#feedback 
+        article.post 
+          figure.f-box__1 
+            img.f1(src="img/feedback/comment4.png", alt="")
+          figure.f-box__2 
+            img.f2(src="img/feedback/comment2.png", alt="")
+          figure.f-box__3 
+            img.f3(src="img/feedback/comment5.png", alt="")
+          figure.f-box__4 
+            img.f4(src="img/feedback/comment1.png", alt="")
+          figure.f-box__5 
+            img.f5(src="img/feedback/comment3.png", alt="")
+      
+        h2.title__en Feedback
+
+      section.l-about.u-bd-set#about
+        .u-bd-set__img-mask
+          img.u-object-fit(src="img/bns/purple-bn.png", alt="purple")
+        .ado-box  
+          img(src="img/ados/gnet.png", alt="net")
+        article.about 
+          .about-box
+            h2.title.m-gray 美髮師
+            p 髮型能表現個人特色，你正在尋找善於打
+              br
+              |造適合自己臉型，以及貼合個人形象的髮
+              br
+              |型設計師嗎？
+              br
+              |Anny美髮師在工作中善於溝通及聽取每
+              br
+              |個人的需求，能夠適時修正，每每做出令
+              br
+              |人滿意的髮型，開朗的個性也是讓大家持
+              br
+              |續光臨的理由，無論如何都想變漂亮的
+              br
+              |你，就讓 Anny幫你變美吧！
+            figure.a-frame 
+              img.anny(src="img/anny.jpg", alt="美髮師Anny")
+          h2.title__en.m-gray About Anny
+      footer.l-footer 
+        .copy &copy;2024 Hairdresser Anny All rights reserved.
+        #l-gotop 
+          iconify-icon(icon="gg:arrow-up-o", width="4rem", height="4rem", style="color: #5bc0be")
+
+
+
+    //- JQuery原始檔CDN
+    script(src="https://code.jquery.com/jquery-3.7.1.min.js", integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=", crossorigin="anonymous")
+    //- G.sap
+    script(src="js/gsap.min.js") 
+    //- swiper banner輪撥
+    script(src="js/swiper.bundle.js")
+    //-bootstrap@5.3.3 
+    script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js", integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz", crossorigin="anonymous")
+    //-自訂Js
+    script(src="js/main.min.js") 
+
+
